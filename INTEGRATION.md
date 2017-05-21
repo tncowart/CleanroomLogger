@@ -9,12 +9,12 @@ CleanroomLogger is designed as a *universal Swift framework* with support for th
 
 Platform|Latest supported OS|Oldest supported OS
 --------|-------------------|-------------------
-iPhone/iPad|iOS 10.2|iOS 8.0
-Macintosh|macOS 10.12|macOS 10.10
-Apple TV|tvOS 10.1|tvOS 9.0
-Apple Watch|watchOS 3.1|watchOS 2.0
+iPhone/iPad|iOS 10.3|iOS 8.0
+Macintosh|macOS 10.12|macOS 10.9
+Apple TV|tvOS 10.2|tvOS 9.0
+Apple Watch|watchOS 3.2|watchOS 2.0
 
-CleanroomLogger uses **Swift 3.0.2** and **requires Xcode 8.2** to compile.
+CleanroomLogger uses **Swift 3.1** and **requires Xcode 8.3** to compile.
 
 ### Options for integration
 
@@ -23,6 +23,13 @@ There are two supported options for integration:
 - **[Carthage integration](#carthage-integration)** uses the [Carthage](https://github.com/Carthage/Carthage) dependency manager to add CleanroomLogger to your project.
 
 - **[Manual integration](#manual-integration)** involves embedding the `CleanroomLogger.xcodeproj` file within your project’s Xcode workspace.
+
+Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomLogger/master/Documentation/API/index.html) provided by CleanroomLogger in any Swift file using the statement:
+
+```swift
+import CleanroomLogger
+```
+
 
 ## Carthage Integration
 
@@ -37,12 +44,12 @@ Within to your project’s root directory, Carthage-based projects will store a 
 To integrate CleanroomLogger in your workspace, you would start by adding the following line to the `Cartfile`:
 
 ```
-github "emaloney/CleanroomLogger" ~> 5.0.0
+github "emaloney/CleanroomLogger" ~> 5.1.0
 ```
 
-This specifies that Carthage use the latest version of CleanroomLogger that is API-compatible with 5.0, i.e. any 5.0.*x* version.
+This specifies that Carthage use the latest version of CleanroomLogger that is API-compatible with 5.1, i.e. any 5.1.*x* version.
 
-**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomLogger/releases); there may be a newer version than 5.0 that is no longer API-compatible.
+**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomLogger/releases); there may be a newer version than 5.1 that is no longer API-compatible.
 
 ### 2. Download CleanroomLogger using Carthage
 
@@ -105,13 +112,6 @@ Otherwise, it should go into **Linked Frameworks and Libraries**.
 
 Select the appropriate Build Scheme for your Target, and press `⌘-B` to try to build. If all goes well, your integration was successful!
 
-### You're done!
-
-Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomLogger/master/Documentation/API/index.html) provided by CleanroomLogger using the statement:
-
-```swift
-import CleanroomLogger
-```
 
 ## Manual Integration
 
@@ -160,13 +160,6 @@ Otherwise, it should go into **Linked Frameworks and Libraries**.
 
 Select the appropriate Build Scheme for your Target, and press `⌘-B` to try to build. If all goes well, your integration was successful!
 
-### You're done!
-
-Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomLogger/master/Documentation/API/index.html) provided by CleanroomLogger using the statement:
-
-```swift
-import CleanroomLogger
-```
 
 ## Further Reading
 

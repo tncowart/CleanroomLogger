@@ -19,7 +19,7 @@ ENABLE_BITCODE[sdk=iphone*] = YES
 //
 // macOS-specific settings
 //
-MACOSX_DEPLOYMENT_TARGET = 10.10
+MACOSX_DEPLOYMENT_TARGET = 10.9
 
 VALID_ARCHS[sdk=macosx*] = i386 x86_64
 
