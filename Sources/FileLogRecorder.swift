@@ -21,7 +21,7 @@ import Dispatch
 open class FileLogRecorder: LogRecorderBase
 {
     /** The path of the file to which log entries will be written. */
-    open let filePath: String
+    public let filePath: String
 
     private let file: UnsafeMutablePointer<FILE>?
     private let newlines: [Character] = ["\n", "\r"]
@@ -82,9 +82,8 @@ open class FileLogRecorder: LogRecorderBase
     open override func record(message: String, for entry: LogEntry, currentQueue: DispatchQueue, synchronousMode: Bool)
     {
         var addNewline = true
-        let chars = message.characters
-        if chars.count > 0 {
-            let lastChar = chars[chars.index(before: chars.endIndex)]
+        if message.count > 0 {
+            let lastChar = message[message.index(before: message.endIndex)]
             addNewline = !newlines.contains(lastChar)
         }
 
